@@ -19,7 +19,8 @@
   font-size: 18px;
   text-transform: lowercase;
   text-underline-offset: 4px;
-  width: 391px;
+  max-width: 391px;
+  width: 100%;
   margin-left: 26px;
   margin-right: 36px;
 }
@@ -35,16 +36,16 @@
   list-style-type: circle;
 }
 
-.header__link_inactive {
-  letter-spacing: 0.18px;
-}
-
-.header__link_active {
+.header__list-item:first-of-type {
   list-style-type: none;
 }
 
 .header__link_active .header__link-list-item {
   text-decoration: none;
+}
+
+.letter-spacing-018 {
+  letter-spacing: 0.18px;
 }
 
 .header__logo {
@@ -65,8 +66,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 241px;
-  height: 105px;
+  max-width: 241px;
+  width: 100%;
+  min-height: 105px;
   font-style: normal;
 }
 
@@ -95,7 +97,6 @@
 
 .cover * {
   position: relative;
-  z-index: 2;
 }
 
 .cover-title {
@@ -103,7 +104,7 @@
   font-size: 100px;
   font-weight: 700;
   text-transform: uppercase;
-  width: 1000px;
+  max-width: 1000px;
   padding-top: 165px;
   margin-right: 50px;
   margin-left: 50px;
@@ -205,8 +206,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  width: 334px;
-  height: 563px;
+  max-width: 334px;
+  width: 100%;
+  min-height: 563px;
 }
 
 .card-theme {
@@ -226,7 +228,7 @@
 
 .card-theme * {
   position: relative;
-  z-index: 2;
+  z-index: 2; 
 }
 
 .first-card {
@@ -302,7 +304,8 @@
 }
 
 .about-column {
-  width: 693px;
+  max-width: 693px;
+  width: 100%;
   min-height: 446px;
   padding-top: 136px;
   margin-left: 72px;
@@ -370,13 +373,15 @@
 }
 
 .socials {
-  width: 240px;
-  height: 48px;
+  max-width: 240px;
+  width: 100%;
+  min-height: 48px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .social-item {
   display: block;
   width: 48px;
