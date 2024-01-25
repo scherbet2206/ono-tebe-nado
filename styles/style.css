@@ -44,7 +44,7 @@
   text-decoration: none;
 }
 
-.letter-spacing-018 {
+.header__list-item:nth-child(n+2):nth-child(-n+3) {
   letter-spacing: 0.18px;
 }
 
